@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            border: 2px solid;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        .bot{
+            justify-content: center;
+            margin: 0 auto;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Fieldset/Legend Form:</u></h1>
+    <form id="form">
+        
+        <fieldset class="one">
+            <legend><h4>Your address</h4></legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+            <br><br>
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street">
+            <br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+        </fieldset>
+      
+        <fieldset class="two">
+            <legend><h4>Additional details</h4></legend>
+            <label for="biography">Biography:</label>
+            <textarea name="biography" id="biography"></textarea>
+            <br><br>
+            <label for="image">Image:</label>
+            <input type="file" value="Choosen file">
+            <br><br>
+            <label for="age">Age Group:</label>
+            <select name="age" id="age">
+                <option value="age">0 to 9 years</option>
+                <option value="age">10 to 19 years</option>
+                <option value="age">20 to 29 years</option>
+                <option value="age">30 to 39 years</option>
+                <option value="age">40 to 49 years</option>
+                <option value="age">50 to 59 years</option>
+                <option value="age">60 to 69 years</option>
+            </select>
+        </fieldset>
+        
+        <fieldset class="three">
+            <legend><h4>Interests</h4></legend>
+            <label for="hobbies">Hobbies:</label>
+            <select multiple="">
+                <option value="cricket">Cricket</option>
+                <option value="basket ball">Backet BAll</option>
+                <option value="hockey">Hockey</option>
+                <option value="study">Study</option>
+            </select>
+            <br><br>
+            <label for="cars">favourite Car?</label>
+            <select id="cars" name="cars">
+                <option value="mehran">Mehran</option>
+                <option value="land cruiser">Land Cruiser</option>
+                <option value="cross">Cross</option>
+                <option value="br-v">BR-V</option>
+                <option value="aqua">Aqua</option>
+            </select><br><br>
+            <label for="transport">Favourite Public Transport:</label>
+            <select id="choices" name="choices">
+                <optgroup label="Ground">
+                    <option value="train">Train</option>
+                    <option value="bus">Bus</option>
+                    <option value="car">Car</option>
+                    <option value="motorbike">Motorbike</option>
+                </optgroup>
+                <optgroup label="water">
+                    <option value="boat">Boat</option>
+                    <option value="yacht">Yacht</option>
+                    <option value="submarine">Submarine</option>
+                    <option value="hovercraft">Hovercraft</option>
+                </optgroup>
+                <optgroup label="air">
+                    <option value="helicopters">Helicopters</option>
+                    <option value="drones">Drones</option>
+                    <option value="fighter jets ">Fighter Jets </option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <br>
+        <div class="bot">
+        <input type="submit" value="submit"> <input type="reset" value="reset" style="margin-left: 20px;">
+    </div>
+        <br>
+    </form>
+    
+</body>
+</html>
